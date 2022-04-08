@@ -15,7 +15,7 @@ For older change log history see the [historic changelog](HISTORIC_CHANGELOG.md)
 - ADGroup
   - Refactored Module.
   - Refactored Unit and Integration Tests.
-  
+
 - Azure Pipeline
   - Updated Pipeline to Ubuntu 18.04 from Ubuntu 16.04
     ([issue #667](https://github.com/dsccommunity/ActiveDirectoryDsc/issues/667))
@@ -61,6 +61,8 @@ For older change log history see the [historic changelog](HISTORIC_CHANGELOG.md)
 - ADDomainController
   - Fixed `Test-TargetResource` error when the `ReadOnlyReplica` property is set to `true`
     ([issue #611](https://github.com/dsccommunity/ActiveDirectoryDsc/issues/611)).
+  - Fixed `Test-TargetResource` functionality with error message: System.Exception: Current node could not find the domain
+    ([issue #673](https://github.com/dsccommunity/ActiveDirectoryDsc/issues/673)).
 - ADGroup
   - Fixed issue with retrieving group members using `Get-ADGroupMember` when members are from another domain
     by adding and using the 'Members' property from `Get-ADGroup` and sending the resulting DistinguishedName to

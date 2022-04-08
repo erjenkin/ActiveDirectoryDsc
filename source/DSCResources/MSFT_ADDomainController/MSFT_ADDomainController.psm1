@@ -59,7 +59,7 @@ function Get-TargetResource
 
     try
     {
-        $domain = Get-ADDomain -Identity $DomainName -Credential $Credential
+        $domain = Find-DomainController -DomainName $DomainName -Credential $Credential
     }
     catch
     {
